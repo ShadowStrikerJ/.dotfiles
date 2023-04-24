@@ -1,0 +1,4 @@
+[submodule "bin/.local/scripts"]
+	path = bin/.local/scripts
+	url = git@github.com:ShadowStrikerJ/.dotfiles-scripts.git
+	branch = main

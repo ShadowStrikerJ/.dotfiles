@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+
+export STOW_FOLDERS="bin,nvim,ubuntu,tmux,zsh"
+
+startMongo() {
+    sudo systemctl start mongod
+    sudo systemctl enable mongod
+}
+
+increaseWatchers() {
+    sudo sysctl fs.inotify.max_user_watches=65536
+    sudo sysctl -p
+}
+
+
+die () {
+    echo >&2 "$@"
+    exit 1
+}
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$PATH:$1
+    fi
+}
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}

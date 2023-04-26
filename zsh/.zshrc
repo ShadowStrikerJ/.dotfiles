@@ -78,11 +78,15 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf zsh-autosuggestions zsh-syntax-highlighting)
+# plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_profile
+
+# Add kubectl auto-completion
+# source <(kubectl completion zsh)
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

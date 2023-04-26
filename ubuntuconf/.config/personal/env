@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export STOW_FOLDERS="bin,nvim,ubuntu,tmux,zsh"
+export STOW_FOLDERS="bin,ubuntuconf,tmux,zsh"
 
 startMongo() {
     sudo systemctl start mongod

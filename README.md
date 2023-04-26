@@ -10,3 +10,15 @@ Since I use a mac for my job and windows for personal, this repo has some config
 
 Some other inspirations:
 Natelandau for zsh [profile](https://natelandau.com/my-mac-os-zsh-profile/)
+
+
+
+
+## Installs
+Things to install
+    - zsh
+        - ohmyzsh
+            - fast-syntax-highlighting for zsh
+        - p10k
+    - tmux (and plugins)
+        - tmux plugin manager (tpm)
